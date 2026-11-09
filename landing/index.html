@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stash — Pencatat keuangan offline dengan scan struk &amp; suara</title>
+  <meta name="description" content="Stash adalah aplikasi pencatat keuangan pribadi untuk Android. Catat pengeluaran dalam hitungan detik, scan struk dan catat dengan suara lewat Gemini AI. Datamu tetap di HP-mu.">
+  <meta name="theme-color" content="#007F88">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Stash — Pencatat keuangan offline dengan scan struk &amp; suara">
+  <meta property="og:description" content="Catat keuangan cepat, privat, dan cerdas. Scan struk &amp; catat dengan suara lewat Gemini AI. Unduh APK gratis.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/dzakiabrar21/Stash-up/main/landing/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/dzakiabrar21/Stash-up/main/landing/assets/og.png">
+
+  <link rel="preload" href="assets/fonts/PlusJakartaSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/PlusJakartaSans-ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Lewati ke konten</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__in">
+      <a class="brand" href="#top" aria-label="Stash, ke atas">
+        <img src="assets/logo.png" alt="" width="36" height="36">
+        <span>Stash</span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" class="nav__links" aria-label="Navigasi utama">
+        <a href="#fitur">Fitur</a>
+        <a href="#preview">Tampilan</a>
+        <a href="#cara-kerja">Cara kerja</a>
+        <a href="#dokumentasi">Dokumentasi</a>
+        <a href="#privasi">Privasi</a>
+        <a class="btn btn--sm" href="#unduh">Unduh APK</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero__in">
+        <div class="hero__copy">
+          <span class="pill">Offline-first &middot; Android &middot; Gratis</span>
+          <h1>Catat keuanganmu.<br><span class="grad">Cepat, privat, cerdas.</span></h1>
+          <p class="lead">Stash mencatat pengeluaran dan pemasukan dalam hitungan detik. Foto struknya atau cukup ucapkan transaksinya, dan <strong>Gemini AI</strong> mengisikan sisanya. Datamu tetap tersimpan di HP-mu sendiri.</p>
+          <div class="hero__cta">
+            <a class="btn btn--lg" href="Stash.apk" download="Stash-1.0.0.apk" data-download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14" /></svg>
+              Unduh APK <small>v1.0.0 &middot; 52,6 MB</small>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#fitur">Lihat fitur</a>
+          </div>
+          <ul class="hero__facts" aria-label="Ringkasan">
+            <li>SQLite lokal</li>
+            <li>Tanpa akun</li>
+            <li>Tanpa iklan &amp; pelacak</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="false">
+          <figure class="phone phone--back reveal">
+            <img src="assets/shots/scan_result.webp" alt="Layar Catat transaksi yang terisi otomatis dari foto struk: Rp 89.355, kategori Kebutuhan Harian" width="540" height="1200" loading="eager">
+          </figure>
+          <figure class="phone phone--front reveal">
+            <img src="assets/shots/home.webp" alt="Beranda Stash: total saldo, pemasukan, pengeluaran, dan transaksi terbaru" width="540" height="1200" loading="eager">
+          </figure>
+          <div class="float float--a reveal"><span class="dot"></span> Struk terbaca otomatis</div>
+          <div class="float float--b reveal">&ldquo;makan siang padang 35 ribu pakai BCA&rdquo;</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FITUR -->
+    <section class="section" id="fitur">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="eyebrow">Fitur</span>
+          <h2>Semua yang kamu butuhkan untuk mencatat uang</h2>
+          <p>Dibuat sederhana: sedikit layar, sedikit ketukan, tanpa harus membuat akun.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 7V5a1 1 0 011-1h2M20 7V5a1 1 0 00-1-1h-2M4 17v2a1 1 0 001 1h2M20 17v2a1 1 0 01-1 1h-2M8 9h8M8 12h8M8 15h5"/></svg></span>
+            <h3>Scan struk dengan Gemini AI</h3>
+            <p>Foto struk belanja, lalu total, nama toko, tanggal, dan kategori terisi otomatis. Total akhir dibaca dengan benar, bukan angka tunai atau kembalian.</p>
+          </article>
+          <article class="card reveal">
+            <span class="ico"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></svg></span>
+            <h3>Catat dengan suara</h3>
+            <p>Ucapkan &ldquo;kemarin bensin lima puluh ribu&rdquo;. Nominal, dompet, kategori, dan tanggal dipahami sendiri, lalu kamu tinggal periksa.</p>
+          </article>
+          <article class="card reveal">
+            <span class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h2M12 13h2M16 13h0M8 17h2M12 17h2"/></svg></span>
+            <h3>Numpad kalkulator</h3>
+            <p>Input cepat dengan <code>+ − × ÷</code> dan tombol <code>000</code>. Jumlahkan beberapa angka langsung di kolom nominal.</p>
+          </article>
+          <article class="card reveal">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M3 7h15a3 3 0 013 3v7a3 3 0 01-3 3H6a3 3 0 01-3-3V7zm0 0l2-3h11M16 14h2"/></svg></span>
+            <h3>Banyak dompet &amp; transfer</h3>
+            <p>BCA, Mandiri, Bank Jago, GoPay, OVO, atau tunai. Saldo dihitung otomatis dan transfer antar dompet tidak dihitung sebagai pengeluaran.</p>
+          </article>
+          <article class="card reveal">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 109 9h-9V3z"/><path d="M15 3.5A9 9 0 0120.5 9H15V3.5z"/></svg></span>
+            <h3>Analitik yang mudah dibaca</h3>
+            <p>Donut chart pengeluaran per kategori dan tren enam bulan terakhir. Ketuk batang untuk berpindah bulan.</p>
+          </article>
+          <article class="card reveal">
+            <span class="ico"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></span>
+            <h3>Offline &amp; privat</h3>
+            <p>Semua data ada di database SQLite di HP-mu. Tanpa akun, tanpa iklan, tanpa pelacak. Internet hanya dipakai saat kamu memilih scan struk atau suara.</p>
+          </article>
+          <article class="card reveal">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4-4m4 4l4-4M5 20h14"/></svg></span>
+            <h3>Ekspor CSV</h3>
+            <p>Bawa seluruh riwayat ke Excel atau Google Sheets untuk cadangan atau analisis sendiri, lengkap dengan nama dompet dan kategori.</p>
+          </article>
+          <article class="card reveal">
+            <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <h3>API key aman</h3>
+            <p>Kunci Gemini milikmu disimpan terenkripsi di Android Keystore. Tidak ada kunci bersama, jadi kuota dan datamu tidak bercampur dengan orang lain.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREVIEW -->
+    <section class="section section--tint" id="preview">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="eyebrow">Tampilan</span>
+          <h2>Sekilas isi aplikasinya</h2>
+          <p>Geser untuk melihat layar-layar utama Stash.</p>
+        </header>
+
+        <div class="carousel" data-carousel>
+          <button class="carousel__btn carousel__btn--prev" aria-label="Sebelumnya">&#8249;</button>
+          <div class="carousel__track" tabindex="0" aria-label="Galeri tampilan aplikasi">
+            <figure class="slide">
+              <div class="phone"><img src="assets/shots/home.webp" alt="Beranda: total saldo dan transaksi terbaru" width="540" height="1200" loading="lazy"></div>
+              <figcaption><strong>Beranda</strong>Saldo, ringkasan bulan ini, dompet, dan transaksi terbaru.</figcaption>
+            </figure>
+            <figure class="slide">
+              <div class="phone"><img src="assets/shots/catat.webp" alt="Catat transaksi dengan numpad kalkulator dan chip kategori" width="540" height="1200" loading="lazy"></div>
+              <figcaption><strong>Catat cepat</strong>Numpad kalkulator, kategori, dan simpan dengan satu ketukan.</figcaption>
+            </figure>
+            <figure class="slide">
+              <div class="phone"><img src="assets/shots/scan_result.webp" alt="Hasil scan struk yang mengisi form otomatis" width="540" height="1200" loading="lazy"></div>
+              <figcaption><strong>Scan struk</strong>Form terisi dari foto struk, kamu hanya memeriksa.</figcaption>
+            </figure>
+            <figure class="slide">
+              <div class="phone"><img src="assets/shots/voice.webp" alt="Sheet perekam suara yang sedang mendengarkan" width="540" height="1200" loading="lazy"></div>
+              <figcaption><strong>Catat dengan suara</strong>Ucapkan transaksinya, selesai dalam beberapa detik.</figcaption>
+            </figure>
+            <figure class="slide">
+              <div class="phone"><img src="assets/shots/wallets.webp" alt="Daftar dompet dengan saldo masing-masing" width="540" height="1200" loading="lazy"></div>
+              <figcaption><strong>Dompet</strong>Kelola rekening, e-wallet, dan uang tunai di satu tempat.</figcaption>
+            </figure>
+            <figure class="slide">
+              <div class="phone"><img src="assets/shots/analytics.webp" alt="Analitik: donut chart pengeluaran per kategori" width="540" height="1200" loading="lazy"></div>
+              <figcaption><strong>Analitik</strong>Ke mana uangmu pergi bulan ini, per kategori.</figcaption>
+            </figure>
+            <figure class="slide">
+              <div class="phone"><img src="assets/shots/settings.webp" alt="Pengaturan: API key Gemini dan ekspor CSV" width="540" height="1200" loading="lazy"></div>
+              <figcaption><strong>Pengaturan</strong>API key Gemini dan ekspor data ke CSV.</figcaption>
+            </figure>
+          </div>
+          <button class="carousel__btn carousel__btn--next" aria-label="Berikutnya">&#8250;</button>
+          <div class="carousel__dots" role="tablist" aria-label="Pilih tampilan"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARA KERJA -->
+    <section class="section" id="cara-kerja">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="eyebrow">Cara kerja</span>
+          <h2>Tiga langkah, tanpa ribet</h2>
+        </header>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="num">1</span>
+            <h3>Pasang &amp; siapkan dompet</h3>
+            <p>Unduh APK, pasang, dan Stash langsung siap dengan dompet <em>Tunai</em>. Tambah BCA, GoPay, atau lainnya kapan saja.</p>
+          </li>
+          <li class="reveal">
+            <span class="num">2</span>
+            <h3>Catat dengan cara yang paling praktis</h3>
+            <p>Ketik lewat numpad, foto struknya, atau ucapkan transaksinya. Semuanya berujung di satu layar yang bisa kamu periksa sebelum menyimpan.</p>
+          </li>
+          <li class="reveal">
+            <span class="num">3</span>
+            <h3>Pantau &amp; bawa datamu</h3>
+            <p>Lihat saldo dan analitik per bulan. Perlu laporan? Ekspor ke CSV dan buka di Excel atau Google Sheets.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- DOKUMENTASI -->
+    <section class="section section--tint" id="dokumentasi">
+      <div class="wrap">
+        <header class="section__head">
+          <span class="eyebrow">Dokumentasi</span>
+          <h2>Panduan memakai Stash</h2>
+          <p>Dari memasang APK sampai ekspor data. Pilih topik di bawah.</p>
+        </header>
+
+        <div class="docs" data-tabs>
+          <div class="docs__tabs" role="tablist" aria-label="Topik dokumentasi">
+            <button role="tab" aria-selected="true" aria-controls="doc-install" id="t-install">Memasang APK</button>
+            <button role="tab" aria-selected="false" aria-controls="doc-start" id="t-start">Mulai cepat</button>
+            <button role="tab" aria-selected="false" aria-controls="doc-scan" id="t-scan">Scan struk</button>
+            <button role="tab" aria-selected="false" aria-controls="doc-voice" id="t-voice">Catat dengan suara</button>
+            <button role="tab" aria-selected="false" aria-controls="doc-wallet" id="t-wallet">Dompet &amp; transfer</button>
+            <button role="tab" aria-selected="false" aria-controls="doc-data" id="t-data">Analitik &amp; ekspor</button>
+            <button role="tab" aria-selected="false" aria-controls="doc-faq" id="t-faq">FAQ</button>
+            <button role="tab" aria-selected="false" aria-controls="doc-tech" id="t-tech">Spesifikasi</button>
+          </div>
+
+          <div class="docs__panels">
+            <article role="tabpanel" id="doc-install" aria-labelledby="t-install" class="panel">
+              <h3>Memasang APK di Android</h3>
+              <p>Stash dibagikan sebagai file APK (tidak lewat Play Store), jadi ada satu pengaturan Android yang perlu kamu izinkan sekali. Butuh <strong>Android 7.0 (API 24) atau lebih baru</strong>.</p>
+              <ol class="list">
+                <li>Unduh <a href="Stash.apk" download="Stash-1.0.0.apk">Stash.apk</a> di HP-mu (atau kirim dari komputer lewat WhatsApp, Drive, atau kabel USB).</li>
+                <li>Buka file yang terunduh. Jika muncul peringatan, ketuk <strong>Pengaturan</strong> lalu aktifkan <em>Izinkan dari sumber ini</em> untuk browser atau aplikasi file yang kamu pakai.</li>
+                <li>Kembali dan ketuk <strong>Instal</strong>. Jika Google Play Protect menampilkan peringatan &ldquo;aplikasi tidak dikenal&rdquo;, itu karena Stash tidak diterbitkan di Play Store. Pilih <em>Detail lainnya</em> lalu <em>Tetap instal</em>.</li>
+                <li>Buka <strong>Stash</strong> dari layar utama. Selesai.</li>
+              </ol>
+              <div class="note"><strong>Memperbarui:</strong> unduh APK versi baru dan pasang di atas yang lama. Datamu tetap ada, karena semua versi ditandatangani dengan kunci yang sama.</div>
+              <div class="note note--soft"><strong>Verifikasi (opsional):</strong> pastikan file tidak berubah dengan membandingkan SHA-256 di bagian <a href="#unduh">Unduh</a>. Di Windows: <code>certutil -hashfile Stash.apk SHA256</code></div>
+            </article>
+
+            <article role="tabpanel" id="doc-start" aria-labelledby="t-start" class="panel" hidden>
+              <h3>Mulai cepat</h3>
+              <p>Saat pertama dibuka, Stash sudah punya dompet <em>Tunai</em>. Untuk mencatat transaksi pertamamu:</p>
+              <ol class="list">
+                <li>Ketuk tombol <strong>+</strong> (atau <strong>Catat</strong> di beranda).</li>
+                <li>Pilih jenis di bagian atas: <strong>Pengeluaran</strong>, <strong>Pemasukan</strong>, atau <strong>Transfer</strong>.</li>
+                <li>Ketik nominal di numpad. Kamu bisa menghitung langsung, misalnya <code>25000 + 3500 × 2</code>, lalu ketuk <code>=</code> untuk menyelesaikannya.</li>
+                <li>Pilih dompet dan tanggal lewat chip di bawah nominal, lalu pilih kategori. Nama toko dan catatan bersifat opsional.</li>
+                <li>Ketuk tombol centang <strong>✓</strong> untuk menyimpan.</li>
+              </ol>
+              <p><strong>Mengubah atau menghapus:</strong> ketuk transaksi di daftar, ubah angkanya, lalu simpan, atau ketuk ikon tempat sampah untuk menghapus.</p>
+              <p>Stash mengingat dompet yang terakhir kamu pakai, jadi pencatatan berikutnya lebih cepat.</p>
+            </article>
+
+            <article role="tabpanel" id="doc-scan" aria-labelledby="t-scan" class="panel" hidden>
+              <h3>Scan struk dengan Gemini AI</h3>
+              <p>Fitur ini butuh <strong>internet</strong> dan <strong>API key Gemini</strong> milikmu. Key gratis tersedia dari Google AI Studio.</p>
+              <h4>Menyiapkan API key (sekali saja)</h4>
+              <ol class="list">
+                <li>Buka <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a> dan buat API key.</li>
+                <li>Di Stash, buka tab <strong>Pengaturan</strong>, tempel key di kolom <em>Gemini API key</em>, lalu ketuk <strong>Simpan</strong>.</li>
+              </ol>
+              <h4>Memindai</h4>
+              <ol class="list">
+                <li>Dari beranda ketuk <strong>Scan struk</strong>, lalu pilih <em>Foto struk</em> atau <em>Pilih dari galeri</em>.</li>
+                <li>Tunggu beberapa detik. Nominal, toko, tanggal, kategori, dan ringkasan barang terisi di layar Catat.</li>
+                <li>Periksa isinya (ada banner &ldquo;Diisi otomatis oleh Gemini AI&rdquo;), ubah bila perlu, lalu ketuk ✓.</li>
+              </ol>
+              <div class="note note--soft"><strong>Tips:</strong> foto struk dari atas, dalam cahaya cukup, dan pastikan baris TOTAL terlihat jelas. Hanya foto yang kamu pilih yang dikirim ke Google, dan hanya saat kamu menekan scan.</div>
+            </article>
+
+            <article role="tabpanel" id="doc-voice" aria-labelledby="t-voice" class="panel" hidden>
+              <h3>Catat dengan suara</h3>
+              <p>Sama seperti scan struk, fitur ini memakai Gemini AI, jadi butuh internet dan API key yang sama.</p>
+              <ol class="list">
+                <li>Buka layar <strong>Catat transaksi</strong> dan ketuk ikon <strong>mikrofon</strong> di pojok kanan atas.</li>
+                <li>Izinkan akses mikrofon saat diminta (hanya dipakai saat kamu merekam).</li>
+                <li>Ucapkan transaksinya dengan jelas, lalu ketuk <strong>Selesai</strong>. Rekaman maksimal 30 detik.</li>
+                <li>Layar Catat terisi otomatis dan menampilkan apa yang terdengar. Periksa, lalu ketuk ✓.</li>
+              </ol>
+              <h4>Contoh kalimat</h4>
+              <ul class="chips">
+                <li>&ldquo;makan siang padang tiga puluh lima ribu pakai BCA&rdquo;</li>
+                <li>&ldquo;kemarin bensin lima puluh ribu&rdquo;</li>
+                <li>&ldquo;gaji masuk delapan setengah juta ke BCA&rdquo;</li>
+                <li>&ldquo;transfer dua ratus ribu dari BCA ke GoPay&rdquo;</li>
+              </ul>
+              <p>Sebut nama dompet persis seperti di Stash agar dikenali. Kalau tidak disebut, dompet yang terakhir dipakai tetap terpilih.</p>
+              <div class="note note--soft"><strong>Privasi:</strong> rekaman disimpan sementara di HP hanya sampai dikirim ke Gemini, lalu dihapus.</div>
+            </article>
+
+            <article role="tabpanel" id="doc-wallet" aria-labelledby="t-wallet" class="panel" hidden>
+              <h3>Dompet &amp; transfer</h3>
+              <h4>Menambah dompet</h4>
+              <ol class="list">
+                <li>Buka tab <strong>Dompet</strong> dan ketuk ikon kartu dengan tanda + (atau tombol <em>Tambah dompet</em>).</li>
+                <li>Pilih preset (BCA, Mandiri, Bank Jago, GoPay, OVO, Tunai) atau isi nama sendiri.</li>
+                <li>Pilih jenis (<em>Bank</em>, <em>E-Wallet</em>, <em>Tunai</em>), isi <em>Saldo awal</em>, pilih warna, lalu ketuk <strong>Tambah dompet</strong>.</li>
+              </ol>
+              <h4>Transfer antar dompet</h4>
+              <p>Ketuk <strong>Transfer</strong> di beranda atau ikon panah di tab Dompet, lalu pilih dompet asal dan tujuan. Transfer menambah saldo tujuan dan mengurangi saldo asal, tetapi <strong>tidak dihitung</strong> sebagai pemasukan atau pengeluaran di analitik.</p>
+              <h4>Mengubah &amp; menghapus</h4>
+              <p>Ketuk dompet untuk melihat riwayatnya, lalu ikon pensil untuk mengubah atau tempat sampah untuk menghapus. <strong>Menghapus dompet juga menghapus semua transaksinya</strong>; Stash akan menanyakan konfirmasi dan menampilkan jumlah transaksinya.</p>
+            </article>
+
+            <article role="tabpanel" id="doc-data" aria-labelledby="t-data" class="panel" hidden>
+              <h3>Analitik &amp; ekspor data</h3>
+              <h4>Analitik</h4>
+              <p>Tab <strong>Analitik</strong> menampilkan pemasukan, pengeluaran, dan selisih untuk bulan yang dipilih (ganti bulan dengan panah di atas), donut chart pengeluaran per kategori, serta tren enam bulan terakhir. Ketuk irisan donut atau batang tren untuk melihat rinciannya.</p>
+              <h4>Ekspor ke CSV</h4>
+              <ol class="list">
+                <li>Buka <strong>Pengaturan</strong> lalu ketuk <strong>Ekspor ke CSV</strong>.</li>
+                <li>Pilih tujuan di menu bagikan Android (Drive, WhatsApp, email, dll.).</li>
+              </ol>
+              <p>Kolom: <code>Tanggal, Jenis, Kategori, Jumlah, Dompet, Dompet Tujuan, Merchant, Catatan</code>. Berkas berformat UTF-8 dengan pemisah koma.</p>
+              <div class="note note--soft"><strong>Excel versi Indonesia</strong> kadang memasukkan semuanya ke satu kolom. Gunakan <em>Data → From Text/CSV</em>, atau buka lewat Google Sheets.</div>
+              <div class="note"><strong>Cadangan:</strong> data hanya ada di HP-mu. Jika Stash dihapus atau HP hilang, datanya ikut hilang, jadi ekspor CSV secara berkala.</div>
+            </article>
+
+            <article role="tabpanel" id="doc-faq" aria-labelledby="t-faq" class="panel" hidden>
+              <h3>Pertanyaan umum</h3>
+              <details>
+                <summary>Apakah Stash butuh internet?</summary>
+                <p>Tidak untuk pencatatan, dompet, analitik, dan ekspor. Internet hanya dipakai saat kamu menekan Scan struk atau Catat dengan suara.</p>
+              </details>
+              <details>
+                <summary>Apakah Stash gratis?</summary>
+                <p>Ya, aplikasinya gratis tanpa iklan. Scan struk dan suara memakai API key Gemini milikmu; Google menyediakan paket gratis dengan batas pemakaian, dan ketentuannya bisa berubah, jadi periksa di Google AI Studio.</p>
+              </details>
+              <details>
+                <summary>Kenapa saya harus membuat API key sendiri?</summary>
+                <p>Supaya kuota dan datamu tidak bercampur dengan pengguna lain, dan Stash tidak perlu server atau akun. Key disimpan terenkripsi di HP-mu.</p>
+              </details>
+              <details>
+                <summary>Muncul pesan &ldquo;Model tidak ditemukan&rdquo;.</summary>
+                <p>Google sesekali menghentikan model lama. Buka <em>Pengaturan → Model</em> dan isi nama model Gemini yang masih tersedia (bawaan Stash saat ini: <code>gemini-3.6-flash</code>).</p>
+              </details>
+              <details>
+                <summary>Apakah ada versi iOS?</summary>
+                <p>Belum. Proyeknya dibuat dengan Flutter sehingga bisa di-build untuk iOS, tetapi itu membutuhkan Mac dan akun Apple Developer.</p>
+              </details>
+              <details>
+                <summary>Kenapa ukuran APK sekitar 53 MB?</summary>
+                <p>APK ini universal dan memuat tiga arsitektur CPU (arm64, arm32, x86_64) supaya jalan di semua HP. Setelah terpasang, ukurannya lebih kecil.</p>
+              </details>
+              <details>
+                <summary>Data saya hilang setelah menghapus aplikasi?</summary>
+                <p>Ya, karena data hanya disimpan di HP. Gunakan <em>Ekspor ke CSV</em> untuk membuat cadangan.</p>
+              </details>
+            </article>
+
+            <article role="tabpanel" id="doc-tech" aria-labelledby="t-tech" class="panel" hidden>
+              <h3>Spesifikasi teknis</h3>
+              <table class="spec">
+                <tbody>
+                  <tr><th>Versi</th><td>1.0.0 (build 1)</td></tr>
+                  <tr><th>Platform</th><td>Android 7.0+ (API 24 ke atas)</td></tr>
+                  <tr><th>Framework</th><td>Flutter &amp; Dart</td></tr>
+                  <tr><th>Penyimpanan</th><td>SQLite lokal (<code>sqflite</code>), nominal disimpan sebagai bilangan bulat Rupiah</td></tr>
+                  <tr><th>Grafik</th><td><code>fl_chart</code></td></tr>
+                  <tr><th>AI</th><td>Google Gemini API (model bawaan <code>gemini-3.6-flash</code>), hanya untuk scan struk &amp; suara</td></tr>
+                  <tr><th>Izin</th><td>Internet, kamera/galeri (foto struk), mikrofon (suara)</td></tr>
+                  <tr><th>Penyimpanan API key</th><td>Android Keystore / iOS Keychain</td></tr>
+                  <tr><th>Font</th><td>Plus Jakarta Sans (SIL OFL 1.1)</td></tr>
+                  <tr><th>Kode sumber</th><td><a href="https://github.com/dzakiabrar21/Stash-up" target="_blank" rel="noopener">github.com/dzakiabrar21/Stash-up</a></td></tr>
+                </tbody>
+              </table>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVASI -->
+    <section class="section" id="privasi">
+      <div class="wrap wrap--narrow">
+        <header class="section__head">
+          <span class="eyebrow">Privasi</span>
+          <h2>Datamu milikmu</h2>
+        </header>
+        <div class="privacy">
+          <div class="privacy__col">
+            <h3>Tinggal di HP-mu</h3>
+            <p>Dompet, saldo, dan semua transaksi tersimpan di penyimpanan internal aplikasi. Stash tidak punya server, tidak ada akun, dan tidak memakai iklan atau pelacak.</p>
+          </div>
+          <div class="privacy__col">
+            <h3>Dikirim ke Google, hanya atas pilihanmu</h3>
+            <p>Foto struk (saat Scan struk) dan rekaman suara singkat (saat Catat dengan suara) dikirim ke Gemini API memakai key-mu sendiri. Rekaman dihapus dari HP setelah dikirim, dan data transaksi lainnya tidak pernah dikirim.</p>
+          </div>
+        </div>
+        <p class="center"><a class="link" href="https://github.com/dzakiabrar21/Stash-up/blob/main/PRIVACY.md" target="_blank" rel="noopener">Baca kebijakan privasi lengkap &rarr;</a></p>
+      </div>
+    </section>
+
+    <!-- UNDUH -->
+    <section class="section section--cta" id="unduh">
+      <div class="wrap wrap--narrow">
+        <div class="download">
+          <img class="download__logo" src="assets/logo.png" alt="Ikon Stash" width="88" height="88" loading="lazy">
+          <h2>Unduh Stash untuk Android</h2>
+          <p>Pilih platform kamu. Saat ini tersedia untuk Android.</p>
+
+          <a class="btn btn--lg btn--light" href="Stash.apk" download="Stash-1.0.0.apk" data-download>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14" /></svg>
+            Android &middot; Stash-1.0.0.apk <small>52,6 MB</small>
+          </a>
+          <p class="download__note" data-platform-note hidden></p>
+
+          <dl class="download__meta">
+            <div><dt>Versi</dt><dd>1.0.0</dd></div>
+            <div><dt>Butuh</dt><dd>Android 7.0+</dd></div>
+            <div><dt>Ukuran</dt><dd>52,6 MB</dd></div>
+          </dl>
+
+          <div class="hash">
+            <span class="hash__label">SHA-256</span>
+            <code id="sha">7122c024fbb0f47a89951dc904e41b1ceeca1be2edf290692533ed3d1a598daa</code>
+            <button class="hash__copy" type="button" data-copy="#sha">Salin</button>
+          </div>
+          <p class="download__help">Belum tahu cara memasang? Lihat <a href="#dokumentasi" data-open-tab="t-install">panduan memasang APK</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <div class="brand brand--footer">
+        <img src="assets/logo.png" alt="" width="28" height="28">
+        <span>Stash</span>
+      </div>
+      <p>&copy; <span id="year">2026</span> Stash. Dibuat dengan Flutter.</p>
+      <nav aria-label="Tautan footer">
+        <a href="https://github.com/dzakiabrar21/Stash-up" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/dzakiabrar21/Stash-up/blob/main/PRIVACY.md" target="_blank" rel="noopener">Privasi</a>
+        <a href="assets/fonts/OFL.txt">Lisensi font</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
